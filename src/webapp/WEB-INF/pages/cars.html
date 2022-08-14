@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+<div>
+  <th:block th:each="msg : ${messages}">
+    <h1 th:text="${msg}"></h1>
+  </th:block>
+</div>
+</body>
+</html>
+
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <title>Список автомобилей</title>
+</head>
+<body>
+<h1>Список автомобилей</h1>
+<div>
+  <table border="1">
+    <tr>
+      <th>Марка</th>
+      <th>Модель</th>
+      <th>Серия</th>
+    </tr>
+    <tr th:each ="car : ${cars}">
+      <td th:utext="${car.brand}">...</td>
+      <td th:utext="${car.model}">...</td>
+      <td th:utext="${car.series}">...</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
