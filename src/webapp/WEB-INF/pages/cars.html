@@ -3,24 +3,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
-<div>
-  <th:block th:each="msg : ${messages}">
-    <h1 th:text="${msg}"></h1>
-  </th:block>
-</div>
-</body>
-</html>
-
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="UTF-8" />
   <title>Список автомобилей</title>
+  <style>
+    body{
+      background-color: #2d4d67;
+    }
+    h1 {
+      background-color: #fbec5d;
+      text-align: center;
+      font-size: 40px;
+      color: #b70e2d;
+      border: 4px solid white;
+    }
+    table {
+      color: aliceblue;
+      text-align: center;
+      font-size: 30px;
+      margin: auto;
+      border-color: white;
+    }
+  </style>
 </head>
-<body>
+<body background-color=#2d4d67>
 <h1>Список автомобилей</h1>
 <div>
   <table border="1">
